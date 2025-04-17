@@ -1,0 +1,376 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    background: url('https://via.placeholder.com/1600x600?text=Homestay+View') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.about, .contact, .gallery, .booking {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.about h2, .contact h2, .gallery h2, .booking h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.about-img, .gallery-images img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.gallery-images {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.contact-form input, .booking-form input, .contact-form textarea, .booking-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.contact-form button, .booking-form button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover, .booking-form button:hover {
+    background-color: #555;
+}
+
+.room-selection label {
+    display: block;
+    margin: 10px 0;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* WhatsApp Chat Button */
+.whatsapp-chat {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #25d366;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 50px;
+    font-size: 1.5rem;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .whatsapp-chat:hover {
+    background: #128c7e;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .whatsapp-chat i {
+    margin-right: 10px;
+  }
+  
+  /* Optional: Adjust size or text on hover */
+  .whatsapp-chat:hover i {
+    font-size: 1.8rem;
+  }
+  
+  /* Global Styles */
+:root {
+    --primary-color: #2a9df4; /* Primary blue */
+    --accent-color: #25d366;  /* WhatsApp color */
+    --dark: #333;
+    --light: #f4f4f4;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  body {
+    background-color: var(--light);
+    color: var(--dark);
+  }
+  
+  /* Header */
+  .site-header {
+    background-color: #222;
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .site-header .logo {
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+  
+  .nav a {
+    color: white;
+    margin-left: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s;
+  }
+  
+  .nav a:hover {
+    color: var(--primary-color);
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: url('https://via.placeholder.com/1600x800') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 120px 0;
+    position: relative;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+  }
+  
+  .hero h2 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 1.3rem;
+    margin-bottom: 40px;
+  }
+  
+  .hero .btn {
+    background: var(--primary-color);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .hero .btn:hover {
+    background: #007bb5;
+  }
+  
+  /* About Section */
+  .about {
+    padding: 60px 0;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .about p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 800px;
+  }
+  
+  /* Rooms Section */
+  .rooms {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+  }
+  
+  .rooms .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  
+  .room-box {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 30%;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .room-box:hover {
+    transform: translateY(-10px);
+  }
+  
+  .room-box img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .room-info {
+    padding: 20px;
+  }
+  
+  .room-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .room-info p {
+    font-size: 1.1rem;
+  }
+  
+  /* Testimonials Section */
+  .testimonials {
+    padding: 60px 0;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .testimonials h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+  }
+  
+  .testimonial-box {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .testimonial-box p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+  
+  .testimonial-box h4 {
+    font-size: 1.3rem;
+    color: var(--primary-color);
+  }
+  
+  /* WhatsApp Chat Button */
+  .whatsapp-chat {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: var(--accent-color);
+    color: white;
+    padding: 15px 20px;
+    border-radius: 50px;
+    font-size: 1.5rem;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .whatsapp-chat:hover {
+    background: #128c7e;
+  }
+  
+  .whatsapp-chat i {
+    margin-right: 10px;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #222;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer p {
+    font-size: 1rem;
+  }
+  /* Gallery Section */
+.gallery {
+    padding: 60px 0;
+    background-color: #f4f4f4;
+    text-align: center;
+  }
+  
+  .gallery h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+  }
+  
+  .gallery-grid figure {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .gallery-grid figure:hover {
+    transform: scale(1.05);
+  }
+  
+  .gallery-grid img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .gallery-grid figcaption {
+    padding: 15px;
+    font-size: 1.2rem;
+    background-color: #fff;
+    color: #555;
+    text-align: center;
+  }
+  

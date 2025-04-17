@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="booking.html">Booking</a></li>
+        </ul>
+    </nav>
+
+    <section class="booking">
+        <h2>Book Your Stay</h2>
+        <p>Choose your room and dates below, and we’ll confirm your reservation.</p>
+
+        <div class="room-selection">
+            <h3>Select Your Room</h3>
+            <label for="room1">
+                <input type="radio" id="room1" name="room" value="Room 1">
+                Room 1 - Cozy with Mountain View (2 Guests) - ₹3,000 per night
+            </label>
+            <label for="room2">
+                <input type="radio" id="room2" name="room" value="Room 2">
+                Room 2 - Spacious with Garden View (3 Guests) - ₹4,000 per night
+            </label>
+            <label for="room3">
+                <input type="radio" id="room3" name="room" value="Room 3">
+                Room 3 - Luxury Suite (4 Guests) - ₹5,000 per night
+            </label>
+        </div>
+
+        <form method="post" action="mailto:your-email@example.com" class="booking-form">
+            <input type="text" id="name" name="name" placeholder="Full Name" required>
+            <input type="email" id="email" name="email" placeholder="Email Address" required>
+            <input type="date" id="checkin" name="checkin" required>
+            <input type="date" id="checkout" name="checkout" required>
+            <button type="submit">Confirm Booking</button>
+        </form>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
